@@ -1,0 +1,3 @@
+zappa 
+requests
+boto3
