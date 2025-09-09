@@ -16,6 +16,21 @@
         "keep_warm": false,
         "apigateway_enabled": false,
         "manage_roles": false,
-        "role_name": "LabRole"
+        "role_name": "LabRole",
+        "events": [
+            {
+                "function": "app.processor.handler",
+                "event_source": {
+                    "arn": "arn:aws:s3:::dolarrawjuan2025",
+                    "events": ["s3:ObjectCreated:*"]
+                }
+            }
+        ],
+        "environment_variables": {
+            "DB_HOST": "dolar-db.ctkee2qq2l2z.us-east-1.rds.amazonaws.com",
+            "DB_USER": "admin",
+            "DB_PASS": "Dolar2025$",
+            "DB_NAME": "dolardb"
+        }
     }
 }
