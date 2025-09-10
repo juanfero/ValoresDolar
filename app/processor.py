@@ -9,13 +9,15 @@ DB_USER = "admin"
 DB_PASS = "Dolar2025$"
 DB_NAME = "dolardb"
 
+# ✅ Cliente S3 global para que pueda ser parcheado en tests
+s3 = boto3.client("s3")
+
 
 def handler(event, context):
     """
     Lambda que se activa cuando un archivo llega a S3.
     Procesa el JSON (lista de listas [timestamp, valor]) y guarda en RDS.
     """
-    s3 = boto3.client("s3")
 
     # Obtener info del evento de S3
     bucket = event['Records'][0]['s3']['bucket']['name']

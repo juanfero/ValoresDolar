@@ -1,0 +1,43 @@
+# Entorno virtual
+venv/
+.env
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Archivos temporales
+.DS_Store
+*.tmp
+*.bak
+*.old
+*.orig
+
+# Pytest cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Paquetes y dependencias
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Archivos de Cloud9/IDE
+.c9/
+.vscode/
+.idea/
+
+# Configuración sensible
+*.pem
+*.key
+*.crt
+*.csv
+*.json
+
+# Archivos de tu proyecto ValoresDolar
+valoresdolar-dev-*.zip
+valoresdolar-*.zip
