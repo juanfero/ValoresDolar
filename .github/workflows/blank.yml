@@ -32,4 +32,5 @@ jobs:
       # 4. Ejecutar pruebas con pytest
       - name: Run tests
         run: |
-          pytest -v --maxfail=1 --disable-warnings test_app.py
+          pytest -v --maxfail=1 --disable-warnings app/test_app.py
+          
