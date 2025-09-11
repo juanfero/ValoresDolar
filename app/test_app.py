@@ -68,7 +68,7 @@ def test_processor_handler_inserts(mock_connect, mock_s3):
 
     event = {
         "Records": [
-            {"s3": {"bucket": {"name": "fake"}, "object": {"key": "fake.json"}}}
+            {"s3": {"bucket": {"name": "fake"}, "hola": {"key": "fake.json"}}}
         ]
     }
 
