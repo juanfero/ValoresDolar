@@ -32,7 +32,7 @@ def handler(event, context):
         
         return {
             "statusCode": 200,
-            "body": json.dumps({"message": f"Archivo {filename} guardado en {BUCKET_NAME}"})
+            "body": json.dumps({"message": f"Archivo {filename} 2 {BUCKET_NAME}"})
         }
     except Exception as e:
         return {
